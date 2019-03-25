@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-
+//Podac ilosc imion, wprowadzic imiona
+// i znalezc najkrotsze/najdluzsze
     public static void main(String[] args) {
 
         int howManyNames;
@@ -18,6 +19,7 @@ public class Main {
             // scanner needs to be repeated (scanners issue)
             names[i] = scanner.nextLine();
         }
+
 
         String longest = names[0];
         for (int i=0; i <howManyNames; i++) {
@@ -36,19 +38,5 @@ public class Main {
         }
         System.out.println("The shortest name is: " + shortest);
 
-
-
-
-
-        /**
-         * longest = names[0]
-         * for (0....howManyNames) {
-         *   if (names[i].length() > longest) {
-         *     longest = names[i]
-         *   }
-         * }
-         *
-         * ->>> max to longest
-         */
     }
 }
